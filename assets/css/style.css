@@ -1,0 +1,108 @@
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    outline: none !important;
+    scroll-padding-top: 0 !important;
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+    background: radial-gradient(circle at 50% -10%, rgba(250, 204, 21, 0.18) 0%, rgba(243, 232, 255, 0.45) 40%, #ffffff 100%);
+}
+
+/* Animación sutil de flotación para tarjetas del hero */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes floatSlow {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.animate-float {
+    animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-slow {
+    animation: floatSlow 5s ease-in-out infinite 1.5s;
+}
+
+/* Animación de palpitar para botones de acción */
+@keyframes palpitar {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.animate-palpitar {
+    animation: palpitar 2s infinite ease-in-out;
+}
+
+/* Efectos de tarjeta con brillo suave */
+.card-hover {
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px -8px rgba(76, 29, 149, 0.14);
+}
+
+/* Glassmorphism sutil */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Transición suave para acordeón FAQ */
+.faq-content {
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+/* Ocultar barra de desplazamiento manteniendo el scroll táctil y fluido */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Carrusel continuo automático infinito para servicios (Marquee fluido) */
+@keyframes marqueeServices {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% - 24px));
+    }
+}
+
+.marquee-group {
+    display: flex;
+    gap: 24px;
+    flex-shrink: 0;
+    animation: marqueeServices 34s linear infinite;
+    will-change: transform;
+}
+
+.marquee-wrapper:hover .marquee-group {
+    animation-play-state: paused;
+}
