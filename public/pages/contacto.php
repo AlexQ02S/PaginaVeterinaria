@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . '/../config.php';
-include_once __DIR__ . '/../includes/header.php';
+require_once __DIR__ . '/../../config.php';
+include_once __DIR__ . '/../../includes/header.php';
 ?>
 
 <main class="flex-1 w-full max-w-7xl mx-auto px-4 pt-6 pb-16 space-y-12 relative">
@@ -112,4 +112,4 @@ include_once __DIR__ . '/../includes/header.php';
     window.BASE_URL = "<?= BASE_URL ?>";
 </script>
 <script src="<?= BASE_URL ?>/assets/js/contactos.js"></script>
-<?php include_once __DIR__ . '/../includes/footer.php'; ?>
+<?php include_once __DIR__ . '/../../includes/footer.php'; ?>

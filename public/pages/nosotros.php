@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . '/../config.php';
-include_once __DIR__ . '/../includes/header.php';
+require_once __DIR__ . '/../../config.php';
+include_once __DIR__ . '/../../includes/header.php';
 ?>
 
 <main class="flex-1 w-full max-w-7xl mx-auto px-4 pt-6 pb-16 space-y-16 relative">
@@ -103,10 +103,10 @@ include_once __DIR__ . '/../includes/header.php';
                 </p>
             </div>
             <div class="lg:col-span-4 flex flex-col sm:flex-row gap-3 justify-center lg:justify-end">
-                <a href="<?= BASE_URL ?>/citas.php" class="bg-accent-300 hover:bg-accent-400 text-brand-900 font-black text-base py-3.5 px-6 rounded-2xl transition-all shadow-lg text-center flex items-center justify-center gap-2">
+                <a href="<?= BASE_URL ?>/pages/citas.php" class="bg-accent-300 hover:bg-accent-400 text-brand-900 font-black text-base py-3.5 px-6 rounded-2xl transition-all shadow-lg text-center flex items-center justify-center gap-2">
                     <i class="fa-solid fa-calendar-check"></i> Agendar Cita
                 </a>
-                <a href="<?= BASE_URL ?>/contacto.php" class="bg-white/10 hover:bg-white/20 text-white font-black text-base py-3.5 px-6 rounded-2xl transition-all border border-white/20 text-center flex items-center justify-center gap-2">
+                <a href="<?= BASE_URL ?>/pages/contacto.php" class="bg-white/10 hover:bg-white/20 text-white font-black text-base py-3.5 px-6 rounded-2xl transition-all border border-white/20 text-center flex items-center justify-center gap-2">
                     <i class="fa-solid fa-envelope"></i> Contáctanos
                 </a>
             </div>
@@ -115,4 +115,4 @@ include_once __DIR__ . '/../includes/header.php';
 
 </main>
 
-<?php include_once __DIR__ . '/../includes/footer.php'; ?>
+<?php include_once __DIR__ . '/../../includes/footer.php'; ?>

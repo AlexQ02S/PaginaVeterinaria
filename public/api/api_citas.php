@@ -1,8 +1,8 @@
 
 <?php
 require_once __DIR__ . '/../../config.php';
-require_once __DIR__ . '/../config/db_citas.php';
-require_once __DIR__ . '/../config/email.php';
+require_once __DIR__ . '/../../backend/config/db_citas.php';
+require_once __DIR__ . '/../../backend/config/email.php';
 
 header('Content-Type: application/json; charset=utf-8');
 $method = $_SERVER['REQUEST_METHOD'];

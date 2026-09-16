@@ -1,6 +1,6 @@
 (function () {
     const baseUrl = window.BASE_URL || '';
-    const API = baseUrl + '/backend/controllers/api_citas.php';
+    const API = baseUrl + '/api/api_citas.php';
     const ZONA_HORARIA = 'America/Guayaquil';
     let currentStep = 1;
     let seleccion = { tipo_cita_id: null, veterinario_id: null, tipo_nombre: '', vet_nombre: '' };

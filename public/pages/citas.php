@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . '/../config.php';
-include_once __DIR__ . '/../includes/header.php';
+require_once __DIR__ . '/../../config.php';
+include_once __DIR__ . '/../../includes/header.php';
 ?>
 
 <main class="flex-1 w-full max-w-6xl mx-auto px-4 pt-8 pb-16 relative">
@@ -240,4 +240,4 @@ include_once __DIR__ . '/../includes/header.php';
     window.SERVER_TIME = "<?= date('H:i:s') ?>";
 </script>
 <script src="<?= BASE_URL ?>/assets/js/citas.js"></script>
-<?php include_once __DIR__ . '/../includes/footer.php'; ?>
+<?php include_once __DIR__ . '/../../includes/footer.php'; ?>

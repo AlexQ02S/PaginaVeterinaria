@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . '/config.php';
-include_once __DIR__ . '/includes/header.php';
+require_once __DIR__ . '/../config.php';
+include_once __DIR__ . '/../includes/header.php';
 ?>
 
 
@@ -849,4 +849,4 @@ include_once __DIR__ . '/includes/header.php';
 <script src="<?= BASE_URL ?>/assets/js/index.js"></script>
 
 
-<?php include_once __DIR__ . '/includes/footer.php'; ?>
+<?php include_once __DIR__ . '/../includes/footer.php'; ?>

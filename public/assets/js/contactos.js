@@ -18,7 +18,7 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     btn.disabled = true;
     btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Enviando...';
 
-    fetch(BASE_URL + '/backend/controllers/api_mensaje.php', {
+    fetch(BASE_URL + '/api/api_mensaje.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)

@@ -39,7 +39,7 @@
                     <li><a href="<?= BASE_URL ?>/index.php" class="hover:text-accent-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs text-accent-400"></i> Inicio</a></li>
                     <li><a href="<?= BASE_URL ?>/pages/servicios.php" class="hover:text-accent-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs text-accent-400"></i> Servicios</a></li>
                     <li><a href="<?= BASE_URL ?>/pages/nosotros.php" class="hover:text-accent-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs text-accent-400"></i> Nosotros</a></li>
-                   <li><a href="#" target="_blank" class="hover:text-accent-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs text-accent-400"></i> AXIS</a></li>
+                   <li><a href="#" target="_blank" class="hover:text-accent-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs text-accent-400"></i> AXXIS</a></li>
                     
                 </ul>
             </div>
