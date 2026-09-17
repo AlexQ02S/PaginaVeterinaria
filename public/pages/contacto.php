@@ -60,7 +60,7 @@ include_once __DIR__ . '/../../includes/header.php';
                 </div>
                 <h3 class="text-xl font-black text-brand-900">Horarios de Atención</h3>
                 <p class="text-sm text-slate-600 leading-relaxed">
-                    <strong>Lunes a Sábado:</strong> 09:00 - 17:00<br>
+                    <strong>Lunes a Sábado:</strong> 09:00 - 18:00<br>
                     <span>Valle de los Chillos, Ecuador</span>
                 </p>
             </div>

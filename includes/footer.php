@@ -58,7 +58,7 @@
                     </li>
                     <li class="flex items-start gap-3">
                         <i class="fa-solid fa-clock text-accent-400 mt-1"></i>
-                        <span>Lun - Sáb: 08:00 - 15:00</span>
+                        <span>Lun - Sáb: 09:00 - 18:00</span>
                     </li>
                 </ul>
             </div>
