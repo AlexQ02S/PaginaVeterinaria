@@ -255,10 +255,60 @@ include_once __DIR__ . '/../../includes/header.php';
             </div>
         </div>
 
-        <!-- 10. Cremación de Mascotas -->
-        <div class="rounded-[32px] border border-purple-100 bg-white overflow-hidden shadow-soft flex flex-col justify-between transition-all hover:shadow-glow card-hover group md:col-span-2 lg:col-span-1">
+        <!-- 10. Petdulación (Identificación y Registro) -->
+        <div class="rounded-[32px] border border-purple-100 bg-white overflow-hidden shadow-soft flex flex-col justify-between transition-all hover:shadow-glow card-hover group">
             <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-purple-100">
-                <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=800&q=80" alt="Cremación y Despedida Digna de Mascotas" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" loading="lazy">
+                <img  src="<?= BASE_URL ?>/assets/img/petdulacion.jpg" alt="Mascota con Identificación y Registro" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent"></div>
+                <span class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md text-brand-900 text-[11px] font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md border border-white/80">
+                    Identificación Oficial
+                </span>
+            </div>
+            <div class="p-6 flex flex-col justify-between flex-1">
+                <div>
+                    <h3 class="text-xl font-black text-brand-900 mb-2 group-hover:text-brand-700 transition-colors">Petdulación</h3>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                        Servicio de registro e identificación formal para tu mascota. Incluye colocación de microchip homologado, emisión de carné o documento de identificación y registro de datos para su protección e identificación rápida.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-purple-50 flex items-center justify-between">
+                    <span class="text-xs font-bold text-slate-500">Microchip & Carné</span>
+                    <a href="<?= BASE_URL ?>/pages/citas.php" class="text-sm font-black text-brand-700 hover:text-brand-900 flex items-center gap-1.5 group-hover:translate-x-1 transition-transform">
+                        Agendar cita <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 11. Asesoría para Viajes al Exterior -->
+        <div class="rounded-[32px] border border-purple-100 bg-white overflow-hidden shadow-soft flex flex-col justify-between transition-all hover:shadow-glow card-hover group">
+            <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-purple-100">
+                <img src="<?= BASE_URL ?>/assets/img/viaje.jpg" alt="Mascota viajera con pasaporte y maleta" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent"></div>
+                <span class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md text-brand-900 text-[11px] font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md border border-white/80">
+                    Viajes & Exportación
+                </span>
+            </div>
+            <div class="p-6 flex flex-col justify-between flex-1">
+                <div>
+                    <h3 class="text-xl font-black text-brand-900 mb-2 group-hover:text-brand-700 transition-colors">Asesoría Viajes al Exterior</h3>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                        Gestión y orientación completa sobre requisitos sanitarios internacionales: emisión de certificados médicos de exportación, valoraciones para Agrocalidad, pruebas de anticuerpos rábicos y esquemas de vacunación específicos.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-purple-50 flex items-center justify-between">
+                    <span class="text-xs font-bold text-slate-500">Trámites Internacionales</span>
+                    <a href="https://wa.me/593983899798" target="_blank" class="text-sm font-black text-brand-700 hover:text-brand-900 flex items-center gap-1.5 group-hover:translate-x-1 transition-transform">
+                        Consultar <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 12. Cremación de Mascotas -->
+        <div class="rounded-[32px] border border-purple-100 bg-white overflow-hidden shadow-soft flex flex-col justify-between transition-all hover:shadow-glow card-hover group">
+            <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-purple-100">
+                <img src="<?= BASE_URL ?>/assets/img/cremacion.jpg"  alt="Cremación y Despedida Digna de Mascotas" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" loading="lazy">
                 <div class="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent"></div>
                 <span class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md text-brand-900 text-[11px] font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md border border-white/80">
                     Despedida Digna

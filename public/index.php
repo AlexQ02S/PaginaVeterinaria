@@ -26,7 +26,7 @@ include_once __DIR__ . '/../includes/header.php';
 
                 <!-- Título H1 con tipografía destacada -->
                 <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-brand-900 tracking-tight leading-[1.12]">
-                    Su centro local para el <br class="hidden sm:block"/>
+                    Su Clinica Veterinaria <br class="hidden sm:block"/>
                     <span class="bg-gradient-to-r from-brand-700 via-brand-600 to-accent-600 bg-clip-text text-transparent">cuidado preventivo</span> de mascotas
                 </h1>
 
@@ -154,7 +154,7 @@ include_once __DIR__ . '/../includes/header.php';
                 <i class="fa-solid fa-award"></i>
             </div>
             <span class="block text-3xl sm:text-4xl font-black text-brand-900 tracking-tight">
-                +<span class="counter" data-target="8">0</span> Años
+                +<span class="counter" data-target="12">0</span> Años
             </span>
             <span class="text-xs sm:text-sm font-bold text-slate-600 mt-1">De Experiencia Médica</span>
         </div>
@@ -171,269 +171,368 @@ include_once __DIR__ . '/../includes/header.php';
     </section>
 
     <!-- 3. NUESTROS SERVICIOS DESTACADOS (CARRUSEL INTERACTIVO CON FOTOS) -->
-    <section class="relative">
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-6">
-            <div>
-                <span class="text-xs font-extrabold uppercase tracking-widest text-brand-700 bg-brand-100 px-4 py-1.5 rounded-full border border-brand-200 shadow-xs">
-                    Nuestros Servicios
-                </span>
-                <h2 class="text-3xl sm:text-4xl font-black text-brand-900 mt-4 tracking-tight">
-                    Cuidado Integral Para Tu Mascota
-                </h2>
-                <p class="text-slate-600 text-sm sm:text-base mt-2 font-medium max-w-2xl">
-                    Desliza y explora nuestras áreas de atención médica y bienestar. Equipamiento moderno, diagnóstico oportuno y el amor que tu consentido merece.
-                </p>
-            </div>
-
-            <!-- Controles de navegación del carrusel -->
-            <div class="flex items-center gap-3 shrink-0">
-                <button id="carousel-servicios-prev" 
-                        aria-label="Servicio anterior"
-                        class="w-12 h-12 rounded-2xl bg-white border border-purple-200 text-brand-900 hover:bg-brand-50 hover:border-brand-400 hover:scale-105 active:scale-95 shadow-sm flex items-center justify-center transition-all cursor-pointer">
-                    <i class="fa-solid fa-chevron-left text-base"></i>
-                </button>
-                <button id="carousel-servicios-next" 
-                        aria-label="Servicio siguiente"
-                        class="w-12 h-12 rounded-2xl bg-gradient-to-r from-brand-700 to-brand-600 hover:from-brand-800 hover:to-brand-700 text-white hover:scale-105 active:scale-95 shadow-glow flex items-center justify-center transition-all cursor-pointer">
-                    <i class="fa-solid fa-chevron-right text-base"></i>
-                </button>
-            </div>
+<section class="relative">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-6">
+        <div>
+            <span class="text-xs font-extrabold uppercase tracking-widest text-brand-700 bg-brand-100 px-4 py-1.5 rounded-full border border-brand-200 shadow-xs">
+                Nuestros Servicios
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-black text-brand-900 mt-4 tracking-tight">
+                Cuidado Integral Para Tu Mascota
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base mt-2 font-medium max-w-2xl">
+                Desliza y explora nuestras áreas de atención médica y bienestar. Equipamiento moderno, diagnóstico oportuno y el amor que tu consentido merece.
+            </p>
         </div>
 
-        <!-- Track deslizable del carrusel con fotos -->
-        <div class="relative overflow-hidden -mx-4 px-4 sm:mx-0 sm:px-0">
-            <div id="servicios-carousel-track" 
-                 class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 pt-1 px-1 select-none cursor-grab active:cursor-grabbing scrollbar-none" style="scrollbar-width: none; -ms-overflow-style: none;">
-                
-                <!-- Slide 1: Consultas Médicas -->
-                <div class="w-[82vw] sm:w-[320px] md:w-[350px] lg:w-[370px] flex-shrink-0 snap-start bg-white rounded-[32px] overflow-hidden border border-purple-100 shadow-soft card-hover flex flex-col justify-between group transition-all">
-                    <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-purple-100">
-                        <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=800&q=80" 
-                             alt="Consulta médica y chequeo veterinario" 
-                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" 
-                             loading="lazy"/>
-                        <div class="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent"></div>
-                        <span class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md text-brand-900 text-[11px] font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md border border-white/80 flex items-center gap-1.5">
-                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Medicina Preventiva
-                        </span>
-                        <span class="absolute bottom-3 left-4 text-white text-xs font-bold flex items-center gap-1.5">
-                            <i class="fa-solid fa-stethoscope text-accent-300"></i> Cuidado General
-                        </span>
-                    </div>
-                    <div class="p-6 flex flex-col justify-between flex-1">
-                        <div>
-                            <h3 class="text-xl font-black text-brand-900 mb-2 group-hover:text-brand-700 transition-colors">
-                                Consultas Médicas
-                            </h3>
-                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
-                                Exámenes clínicos completos, planes de vacunación, desparasitación interna y externa, y control nutricional personalizado.
-                            </p>
-                            <div class="space-y-1.5 mb-6 text-xs text-slate-500 font-semibold">
-                                <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Chequeo clínico preventivo</div>
-                                <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Vacunación y refuerzos</div>
-                                <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Control de peso y dieta</div>
-                            </div>
-                        </div>
-                        <a href="<?= BASE_URL ?>/pages/citas.php" class="w-full text-center bg-gradient-to-r from-brand-700 to-brand-600 hover:from-brand-800 hover:to-brand-700 text-white font-extrabold text-xs sm:text-sm py-3 rounded-2xl shadow-sm transition-all flex items-center justify-center gap-2 group-hover:shadow-glow">
-                            <span>Agendar Consulta</span>
-                            <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
-                        </a>
-                    </div>
-                </div>
+        <!-- Controles de navegación del carrusel -->
+        <div class="flex items-center gap-3 shrink-0">
+            <button id="carousel-servicios-prev" 
+                    aria-label="Servicio anterior"
+                    class="w-12 h-12 rounded-2xl bg-white border border-purple-200 text-brand-900 hover:bg-brand-50 hover:border-brand-400 hover:scale-105 active:scale-95 shadow-sm flex items-center justify-center transition-all cursor-pointer">
+                <i class="fa-solid fa-chevron-left text-base"></i>
+            </button>
+            <button id="carousel-servicios-next" 
+                    aria-label="Servicio siguiente"
+                    class="w-12 h-12 rounded-2xl bg-gradient-to-r from-brand-700 to-brand-600 hover:from-brand-800 hover:to-brand-700 text-white hover:scale-105 active:scale-95 shadow-glow flex items-center justify-center transition-all cursor-pointer">
+                <i class="fa-solid fa-chevron-right text-base"></i>
+            </button>
+        </div>
+    </div>
 
-                <!-- Slide 2: Diagnóstico & Laboratorio -->
-                <div class="w-[82vw] sm:w-[320px] md:w-[350px] lg:w-[370px] flex-shrink-0 snap-start bg-white rounded-[32px] overflow-hidden border border-purple-100 shadow-soft card-hover flex flex-col justify-between group transition-all">
-                    <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-purple-100">
-                        <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=800&q=80" 
-                             alt="Diagnóstico clínico y análisis de laboratorio veterinario" 
-                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" 
-                             loading="lazy"/>
-                        <div class="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent"></div>
-                        <span class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md text-brand-900 text-[11px] font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md border border-white/80 flex items-center gap-1.5">
-                            <span class="w-2 h-2 rounded-full bg-accent-500 animate-pulse"></span> Laboratorio
-                        </span>
-                        <span class="absolute bottom-3 left-4 text-white text-xs font-bold flex items-center gap-1.5">
-                            <i class="fa-solid fa-flask-vial text-accent-300"></i> Resultados Precisos
-                        </span>
-                    </div>
-                    <div class="p-6 flex flex-col justify-between flex-1">
-                        <div>
-                            <h3 class="text-xl font-black text-brand-900 mb-2 group-hover:text-brand-700 transition-colors">
-                                Diagnóstico & Cuidado
-                            </h3>
-                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
-                                Monitoreo continuo y análisis clínicos de laboratorio para identificar a tiempo cualquier afección con exactitud.
-                            </p>
-                            <div class="space-y-1.5 mb-6 text-xs text-slate-500 font-semibold">
-                                <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Análisis de sangre y orina</div>
-                                <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Pruebas rápidas infecciosas</div>
-                                <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Monitoreo clínico continuo</div>
-                            </div>
-                        </div>
-                        <a href="<?= BASE_URL ?>/pages/citas.php" class="w-full text-center bg-gradient-to-r from-brand-700 to-brand-600 hover:from-brand-800 hover:to-brand-700 text-white font-extrabold text-xs sm:text-sm py-3 rounded-2xl shadow-sm transition-all flex items-center justify-center gap-2 group-hover:shadow-glow">
-                            <span>Agendar Diagnóstico</span>
-                            <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
-                        </a>
-                    </div>
+    <!-- Track deslizable del carrusel con fotos -->
+    <div class="relative overflow-hidden -mx-4 px-4 sm:mx-0 sm:px-0">
+        <div id="servicios-carousel-track" 
+             class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 pt-1 px-1 select-none cursor-grab active:cursor-grabbing scrollbar-none" style="scrollbar-width: none; -ms-overflow-style: none;">
+            
+            <!-- Slide 1: Consultas Médicas -->
+            <div class="w-[82vw] sm:w-[320px] md:w-[350px] lg:w-[370px] flex-shrink-0 snap-start bg-white rounded-[32px] overflow-hidden border border-purple-100 shadow-soft card-hover flex flex-col justify-between group transition-all">
+                <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-purple-100">
+                    <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=800&q=80" 
+                         alt="Consulta médica y chequeo veterinario" 
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" 
+                         loading="lazy"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent"></div>
+                    <span class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md text-brand-900 text-[11px] font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md border border-white/80 flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Medicina Preventiva
+                    </span>
+                    <span class="absolute bottom-3 left-4 text-white text-xs font-bold flex items-center gap-1.5">
+                        <i class="fa-solid fa-stethoscope text-accent-300"></i> Cuidado General
+                    </span>
                 </div>
-
-                <!-- Slide 3: Cirugías & Quirófano -->
-                <div class="w-[82vw] sm:w-[320px] md:w-[350px] lg:w-[370px] flex-shrink-0 snap-start bg-white rounded-[32px] overflow-hidden border border-purple-100 shadow-soft card-hover flex flex-col justify-between group transition-all">
-                    <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-purple-100">
-                        <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&w=800&q=80" 
-                             alt="Cirugías veterinarias y quirófano equipado" 
-                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" 
-                             loading="lazy"/>
-                        <div class="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent"></div>
-                        <span class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md text-brand-900 text-[11px] font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md border border-white/80 flex items-center gap-1.5">
-                            <span class="w-2 h-2 rounded-full bg-purple-500 animate-pulse"></span> Quirófano
-                        </span>
-                        <span class="absolute bottom-3 left-4 text-white text-xs font-bold flex items-center gap-1.5">
-                            <i class="fa-solid fa-shield-halved text-accent-300"></i> Máxima Seguridad
-                        </span>
-                    </div>
-                    <div class="p-6 flex flex-col justify-between flex-1">
-                        <div>
-                            <h3 class="text-xl font-black text-brand-900 mb-2 group-hover:text-brand-700 transition-colors">
-                                Cirugías & Farma
-                            </h3>
-                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
-                                Quirófano moderno equipado para esterilizaciones y cirugías con monitoreo permanente y farmacia garantizada.
-                            </p>
-                            <div class="space-y-1.5 mb-6 text-xs text-slate-500 font-semibold">
-                                <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Esterilizaciones seguras</div>
-                                <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Monitoreo anestésico</div>
-                                <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Medicamentos post-operatorios</div>
-                            </div>
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <div>
+                        <h3 class="text-xl font-black text-brand-900 mb-2 group-hover:text-brand-700 transition-colors">
+                            Consultas Médicas
+                        </h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                            Exámenes clínicos completos, planes de vacunación, desparasitación interna y externa, y control nutricional personalizado.
+                        </p>
+                        <div class="space-y-1.5 mb-6 text-xs text-slate-500 font-semibold">
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Chequeo clínico preventivo</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Vacunación y refuerzos</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Control de peso y dieta</div>
                         </div>
-                        <a href="<?= BASE_URL ?>/pages/citas.php" class="w-full text-center bg-gradient-to-r from-brand-700 to-brand-600 hover:from-brand-800 hover:to-brand-700 text-white font-extrabold text-xs sm:text-sm py-3 rounded-2xl shadow-sm transition-all flex items-center justify-center gap-2 group-hover:shadow-glow">
-                            <span>Consultar Cirugía</span>
-                            <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
-                        </a>
                     </div>
+                    <a href="<?= BASE_URL ?>/pages/citas.php" class="w-full text-center bg-gradient-to-r from-brand-700 to-brand-600 hover:from-brand-800 hover:to-brand-700 text-white font-extrabold text-xs sm:text-sm py-3 rounded-2xl shadow-sm transition-all flex items-center justify-center gap-2 group-hover:shadow-glow">
+                        <span>Agendar Consulta</span>
+                        <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                    </a>
                 </div>
-
-                <!-- Slide 4: Estética & Spa -->
-                <div class="w-[82vw] sm:w-[320px] md:w-[350px] lg:w-[370px] flex-shrink-0 snap-start bg-white rounded-[32px] overflow-hidden border border-purple-100 shadow-soft card-hover flex flex-col justify-between group transition-all">
-                    <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-purple-100">
-                        <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=800&q=80" 
-                             alt="Baño spa y peluquería canina felina" 
-                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" 
-                             loading="lazy"/>
-                        <div class="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent"></div>
-                        <span class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md text-brand-900 text-[11px] font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md border border-white/80 flex items-center gap-1.5">
-                            <span class="w-2 h-2 rounded-full bg-cyan-500 animate-pulse"></span> Spa & Peluquería
-                        </span>
-                        <span class="absolute bottom-3 left-4 text-white text-xs font-bold flex items-center gap-1.5">
-                            <i class="fa-solid fa-bath text-accent-300"></i> Belleza & Aseo
-                        </span>
-                    </div>
-                    <div class="p-6 flex flex-col justify-between flex-1">
-                        <div>
-                            <h3 class="text-xl font-black text-brand-900 mb-2 group-hover:text-brand-700 transition-colors">
-                                Estética & Spa
-                            </h3>
-                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
-                                Peluquería canina y felina profesional, baños medicados, corte higiénico y profilaxis dental para consentir a tu mascota.
-                            </p>
-                            <div class="space-y-1.5 mb-6 text-xs text-slate-500 font-semibold">
-                                <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Baños medicados & antipulgas</div>
-                                <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Corte según la raza</div>
-                                <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Limpieza de oídos y uñas</div>
-                            </div>
-                        </div>
-                        <a href="<?= BASE_URL ?>/pages/citas.php" class="w-full text-center bg-gradient-to-r from-brand-700 to-brand-600 hover:from-brand-800 hover:to-brand-700 text-white font-extrabold text-xs sm:text-sm py-3 rounded-2xl shadow-sm transition-all flex items-center justify-center gap-2 group-hover:shadow-glow">
-                            <span>Agendar Spa / Baño</span>
-                            <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Slide 5: Hospitalización & Cuidados Continuos -->
-                <div class="w-[82vw] sm:w-[320px] md:w-[350px] lg:w-[370px] flex-shrink-0 snap-start bg-white rounded-[32px] overflow-hidden border border-purple-100 shadow-soft card-hover flex flex-col justify-between group transition-all">
-                    <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-purple-100">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVY2xk0Nq8RCETJbViYKg6kSjC28Khqk1EPuEbX229jrw3jeoPSCD5jK0j&s=10" 
-                             alt="Hospitalización veterinaria y monitoreo" 
-                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" 
-                             loading="lazy"/>
-                        <div class="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent"></div>
-                        <span class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md text-brand-900 text-[11px] font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md border border-white/80 flex items-center gap-1.5">
-                            <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span> Cuidado Continuo
-                        </span>
-                        <span class="absolute bottom-3 left-4 text-white text-xs font-bold flex items-center gap-1.5">
-                            <i class="fa-solid fa-house-chimney-medical text-accent-300"></i> Supervisión Atenta
-                        </span>
-                    </div>
-                    <div class="p-6 flex flex-col justify-between flex-1">
-                        <div>
-                            <h3 class="text-xl font-black text-brand-900 mb-2 group-hover:text-brand-700 transition-colors">
-                                Hospitalización 24/7
-                            </h3>
-                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
-                                Cuidados intensivos y monitoreo profesional continuo para pacientes en recuperación médica o post-quirúrgica.
-                            </p>
-                            <div class="space-y-1.5 mb-6 text-xs text-slate-500 font-semibold">
-                                <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Control de signos vitales</div>
-                                <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Terapia de fluidos y sueros</div>
-                                <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Ambiente seguro y tranquilo</div>
-                            </div>
-                        </div>
-                        <a href="<?= BASE_URL ?>/pages/citas.php" class="w-full text-center bg-gradient-to-r from-brand-700 to-brand-600 hover:from-brand-800 hover:to-brand-700 text-white font-extrabold text-xs sm:text-sm py-3 rounded-2xl shadow-sm transition-all flex items-center justify-center gap-2 group-hover:shadow-glow">
-                            <span>Agendar Hospitalización</span>
-                            <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Slide 6: Profilaxis Dental -->
-                <div class="w-[82vw] sm:w-[320px] md:w-[350px] lg:w-[370px] flex-shrink-0 snap-start bg-white rounded-[32px] overflow-hidden border border-purple-100 shadow-soft card-hover flex flex-col justify-between group transition-all">
-                    <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-purple-100">
-                        <img src="https://images.unsplash.com/photo-1535294435445-d7249524ef2e?auto=format&fit=crop&w=800&q=80" 
-                             alt="Profilaxis dental y salud bucal de mascotas" 
-                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" 
-                             loading="lazy"/>
-                        <div class="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent"></div>
-                        <span class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md text-brand-900 text-[11px] font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md border border-white/80 flex items-center gap-1.5">
-                            <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span> Salud Bucal
-                        </span>
-                        <span class="absolute bottom-3 left-4 text-white text-xs font-bold flex items-center gap-1.5">
-                            <i class="fa-solid fa-tooth text-accent-300"></i> Limpieza Ultrasónica
-                        </span>
-                    </div>
-                    <div class="p-6 flex flex-col justify-between flex-1">
-                        <div>
-                            <h3 class="text-xl font-black text-brand-900 mb-2 group-hover:text-brand-700 transition-colors">
-                                Profilaxis Dental
-                            </h3>
-                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
-                                Remoción profunda de sarro y placa bacteriana mediante ultrasonido para prevenir el dolor, mal aliento y pérdida de piezas.
-                            </p>
-                            <div class="space-y-1.5 mb-6 text-xs text-slate-500 font-semibold">
-                                <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Ultrasonido odontológico</div>
-                                <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Prevención de gingivitis</div>
-                                <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Aliento fresco y saludable</div>
-                            </div>
-                        </div>
-                        <a href="<?= BASE_URL ?>/pages/citas.php" class="w-full text-center bg-gradient-to-r from-brand-700 to-brand-600 hover:from-brand-800 hover:to-brand-700 text-white font-extrabold text-xs sm:text-sm py-3 rounded-2xl shadow-sm transition-all flex items-center justify-center gap-2 group-hover:shadow-glow">
-                            <span>Agendar Profilaxis</span>
-                            <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
-                        </a>
-                    </div>
-                </div>
-
             </div>
-        </div>
 
-        <!-- Indicadores / Dots del carrusel -->
-        <div id="servicios-carousel-dots" class="flex items-center justify-center gap-2 mt-6"></div>
+            <!-- Slide 2: Diagnóstico & Laboratorio -->
+            <div class="w-[82vw] sm:w-[320px] md:w-[350px] lg:w-[370px] flex-shrink-0 snap-start bg-white rounded-[32px] overflow-hidden border border-purple-100 shadow-soft card-hover flex flex-col justify-between group transition-all">
+                <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-purple-100">
+                    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=800&q=80" 
+                         alt="Diagnóstico clínico y análisis de laboratorio veterinario" 
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" 
+                         loading="lazy"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent"></div>
+                    <span class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md text-brand-900 text-[11px] font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md border border-white/80 flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-accent-500 animate-pulse"></span> Laboratorio
+                    </span>
+                    <span class="absolute bottom-3 left-4 text-white text-xs font-bold flex items-center gap-1.5">
+                        <i class="fa-solid fa-flask-vial text-accent-300"></i> Resultados Precisos
+                    </span>
+                </div>
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <div>
+                        <h3 class="text-xl font-black text-brand-900 mb-2 group-hover:text-brand-700 transition-colors">
+                            Diagnóstico & Cuidado
+                        </h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                            Monitoreo continuo y análisis clínicos de laboratorio para identificar a tiempo cualquier afección con exactitud.
+                        </p>
+                        <div class="space-y-1.5 mb-6 text-xs text-slate-500 font-semibold">
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Análisis de sangre y orina</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Pruebas rápidas infecciosas</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Monitoreo clínico continuo</div>
+                        </div>
+                    </div>
+                    <a href="<?= BASE_URL ?>/pages/citas.php" class="w-full text-center bg-gradient-to-r from-brand-700 to-brand-600 hover:from-brand-800 hover:to-brand-700 text-white font-extrabold text-xs sm:text-sm py-3 rounded-2xl shadow-sm transition-all flex items-center justify-center gap-2 group-hover:shadow-glow">
+                        <span>Agendar Diagnóstico</span>
+                        <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
 
-        <div class="text-center mt-10">
-            <a href="<?= BASE_URL ?>/pages/servicios.php" class="inline-flex items-center gap-2 text-brand-700 hover:text-brand-900 font-extrabold text-sm hover:underline">
-                <span>Ver todos los 10 servicios veterinarios detallados</span>
-                <i class="fa-solid fa-arrow-right text-xs"></i>
-            </a>
+            <!-- Slide 3: Cirugías & Quirófano -->
+            <div class="w-[82vw] sm:w-[320px] md:w-[350px] lg:w-[370px] flex-shrink-0 snap-start bg-white rounded-[32px] overflow-hidden border border-purple-100 shadow-soft card-hover flex flex-col justify-between group transition-all">
+                <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-purple-100">
+                    <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&w=800&q=80" 
+                         alt="Cirugías veterinarias y quirófano equipado" 
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" 
+                         loading="lazy"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent"></div>
+                    <span class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md text-brand-900 text-[11px] font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md border border-white/80 flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-purple-500 animate-pulse"></span> Quirófano
+                    </span>
+                    <span class="absolute bottom-3 left-4 text-white text-xs font-bold flex items-center gap-1.5">
+                        <i class="fa-solid fa-shield-halved text-accent-300"></i> Máxima Seguridad
+                    </span>
+                </div>
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <div>
+                        <h3 class="text-xl font-black text-brand-900 mb-2 group-hover:text-brand-700 transition-colors">
+                            Cirugías & Farma
+                        </h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                            Quirófano moderno equipado para esterilizaciones y cirugías con monitoreo permanente y farmacia garantizada.
+                        </p>
+                        <div class="space-y-1.5 mb-6 text-xs text-slate-500 font-semibold">
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Esterilizaciones seguras</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Monitoreo anestésico</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Medicamentos post-operatorios</div>
+                        </div>
+                    </div>
+                    <a href="<?= BASE_URL ?>/pages/citas.php" class="w-full text-center bg-gradient-to-r from-brand-700 to-brand-600 hover:from-brand-800 hover:to-brand-700 text-white font-extrabold text-xs sm:text-sm py-3 rounded-2xl shadow-sm transition-all flex items-center justify-center gap-2 group-hover:shadow-glow">
+                        <span>Consultar Cirugía</span>
+                        <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slide 4: Estética & Spa -->
+            <div class="w-[82vw] sm:w-[320px] md:w-[350px] lg:w-[370px] flex-shrink-0 snap-start bg-white rounded-[32px] overflow-hidden border border-purple-100 shadow-soft card-hover flex flex-col justify-between group transition-all">
+                <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-purple-100">
+                    <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=800&q=80" 
+                         alt="Baño spa y peluquería canina felina" 
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" 
+                         loading="lazy"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent"></div>
+                    <span class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md text-brand-900 text-[11px] font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md border border-white/80 flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-cyan-500 animate-pulse"></span> Spa & Peluquería
+                    </span>
+                    <span class="absolute bottom-3 left-4 text-white text-xs font-bold flex items-center gap-1.5">
+                        <i class="fa-solid fa-bath text-accent-300"></i> Belleza & Aseo
+                    </span>
+                </div>
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <div>
+                        <h3 class="text-xl font-black text-brand-900 mb-2 group-hover:text-brand-700 transition-colors">
+                            Estética & Spa
+                        </h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                            Peluquería canina y felina profesional, baños medicados, corte higiénico y profilaxis dental para consentir a tu mascota.
+                        </p>
+                        <div class="space-y-1.5 mb-6 text-xs text-slate-500 font-semibold">
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Baños medicados & antipulgas</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Corte según la raza</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Limpieza de oídos y uñas</div>
+                        </div>
+                    </div>
+                    <a href="<?= BASE_URL ?>/pages/citas.php" class="w-full text-center bg-gradient-to-r from-brand-700 to-brand-600 hover:from-brand-800 hover:to-brand-700 text-white font-extrabold text-xs sm:text-sm py-3 rounded-2xl shadow-sm transition-all flex items-center justify-center gap-2 group-hover:shadow-glow">
+                        <span>Agendar Spa / Baño</span>
+                        <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slide 5: Hospitalización & Cuidados Continuos -->
+            <div class="w-[82vw] sm:w-[320px] md:w-[350px] lg:w-[370px] flex-shrink-0 snap-start bg-white rounded-[32px] overflow-hidden border border-purple-100 shadow-soft card-hover flex flex-col justify-between group transition-all">
+                <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-purple-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVY2xk0Nq8RCETJbViYKg6kSjC28Khqk1EPuEbX229jrw3jeoPSCD5jK0j&s=10" 
+                         alt="Hospitalización veterinaria y monitoreo" 
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" 
+                         loading="lazy"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent"></div>
+                    <span class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md text-brand-900 text-[11px] font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md border border-white/80 flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span> Cuidado Continuo
+                    </span>
+                    <span class="absolute bottom-3 left-4 text-white text-xs font-bold flex items-center gap-1.5">
+                        <i class="fa-solid fa-house-chimney-medical text-accent-300"></i> Supervisión Atenta
+                    </span>
+                </div>
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <div>
+                        <h3 class="text-xl font-black text-brand-900 mb-2 group-hover:text-brand-700 transition-colors">
+                            Hospitalización 24/7
+                        </h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                            Cuidados intensivos y monitoreo profesional continuo para pacientes en recuperación médica o post-quirúrgica.
+                        </p>
+                        <div class="space-y-1.5 mb-6 text-xs text-slate-500 font-semibold">
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Control de signos vitales</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Terapia de fluidos y sueros</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Ambiente seguro y tranquilo</div>
+                        </div>
+                    </div>
+                    <a href="<?= BASE_URL ?>/pages/citas.php" class="w-full text-center bg-gradient-to-r from-brand-700 to-brand-600 hover:from-brand-800 hover:to-brand-700 text-white font-extrabold text-xs sm:text-sm py-3 rounded-2xl shadow-sm transition-all flex items-center justify-center gap-2 group-hover:shadow-glow">
+                        <span>Agendar Hospitalización</span>
+                        <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slide 6: Profilaxis Dental -->
+            <div class="w-[82vw] sm:w-[320px] md:w-[350px] lg:w-[370px] flex-shrink-0 snap-start bg-white rounded-[32px] overflow-hidden border border-purple-100 shadow-soft card-hover flex flex-col justify-between group transition-all">
+                <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-purple-100">
+                    <img src="https://images.unsplash.com/photo-1535294435445-d7249524ef2e?auto=format&fit=crop&w=800&q=80" 
+                         alt="Profilaxis dental y salud bucal de mascotas" 
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" 
+                         loading="lazy"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent"></div>
+                    <span class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md text-brand-900 text-[11px] font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md border border-white/80 flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span> Salud Bucal
+                    </span>
+                    <span class="absolute bottom-3 left-4 text-white text-xs font-bold flex items-center gap-1.5">
+                        <i class="fa-solid fa-tooth text-accent-300"></i> Limpieza Ultrasónica
+                    </span>
+                </div>
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <div>
+                        <h3 class="text-xl font-black text-brand-900 mb-2 group-hover:text-brand-700 transition-colors">
+                            Profilaxis Dental
+                        </h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                            Remoción profunda de sarro y placa bacteriana mediante ultrasonido para prevenir el dolor, mal aliento y pérdida de piezas.
+                        </p>
+                        <div class="space-y-1.5 mb-6 text-xs text-slate-500 font-semibold">
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Ultrasonido odontológico</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Prevención de gingivitis</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Aliento fresco y saludable</div>
+                        </div>
+                    </div>
+                    <a href="<?= BASE_URL ?>/pages/citas.php" class="w-full text-center bg-gradient-to-r from-brand-700 to-brand-600 hover:from-brand-800 hover:to-brand-700 text-white font-extrabold text-xs sm:text-sm py-3 rounded-2xl shadow-sm transition-all flex items-center justify-center gap-2 group-hover:shadow-glow">
+                        <span>Agendar Profilaxis</span>
+                        <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slide 7: Petdulación -->
+            <div class="w-[82vw] sm:w-[320px] md:w-[350px] lg:w-[370px] flex-shrink-0 snap-start bg-white rounded-[32px] overflow-hidden border border-purple-100 shadow-soft card-hover flex flex-col justify-between group transition-all">
+                <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-purple-100">
+                    <img src="<?= BASE_URL ?>/assets/img/petdulacion.jpg" 
+                         alt="Mascota con Identificación y Registro" 
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" 
+                         loading="lazy"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent"></div>
+                    <span class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md text-brand-900 text-[11px] font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md border border-white/80 flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span> Identificación Oficial
+                    </span>
+                    <span class="absolute bottom-3 left-4 text-white text-xs font-bold flex items-center gap-1.5">
+                        <i class="fa-solid fa-id-card text-accent-300"></i> Microchip & Carné
+                    </span>
+                </div>
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <div>
+                        <h3 class="text-xl font-black text-brand-900 mb-2 group-hover:text-brand-700 transition-colors">
+                            Petdulación
+                        </h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                            Servicio de registro e identificación formal para tu mascota. Incluye colocación de microchip homologado y emisión de carné oficial.
+                        </p>
+                        <div class="space-y-1.5 mb-6 text-xs text-slate-500 font-semibold">
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Microchip ISO homologado</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Emisión de documento / carné</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Registro de datos para extravíos</div>
+                        </div>
+                    </div>
+                    <a href="<?= BASE_URL ?>/pages/citas.php" class="w-full text-center bg-gradient-to-r from-brand-700 to-brand-600 hover:from-brand-800 hover:to-brand-700 text-white font-extrabold text-xs sm:text-sm py-3 rounded-2xl shadow-sm transition-all flex items-center justify-center gap-2 group-hover:shadow-glow">
+                        <span>Agendar Petdulación</span>
+                        <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slide 8: Asesoría para Viajes al Exterior -->
+            <div class="w-[82vw] sm:w-[320px] md:w-[350px] lg:w-[370px] flex-shrink-0 snap-start bg-white rounded-[32px] overflow-hidden border border-purple-100 shadow-soft card-hover flex flex-col justify-between group transition-all">
+                <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-purple-100">
+                    <img src="<?= BASE_URL ?>/assets/img/viaje.jpg" 
+                         alt="Mascota viajera con pasaporte y maleta" 
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" 
+                         loading="lazy"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent"></div>
+                    <span class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md text-brand-900 text-[11px] font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md border border-white/80 flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span> Viajes & Exportación
+                    </span>
+                    <span class="absolute bottom-3 left-4 text-white text-xs font-bold flex items-center gap-1.5">
+                        <i class="fa-solid fa-plane-departure text-accent-300"></i> Trámites Internacionales
+                    </span>
+                </div>
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <div>
+                        <h3 class="text-xl font-black text-brand-900 mb-2 group-hover:text-brand-700 transition-colors">
+                            Asesoría Viajes al Exterior
+                        </h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                            Gestión y orientación sobre requisitos sanitarios internacionales: certificados de exportación, Agrocalidad y pruebas rábicas.
+                        </p>
+                        <div class="space-y-1.5 mb-6 text-xs text-slate-500 font-semibold">
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Certificados para Agrocalidad</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Pruebas de anticuerpos rábicos</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Esquemas de vacunación específicos</div>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/593983899798" target="_blank" class="w-full text-center bg-gradient-to-r from-brand-700 to-brand-600 hover:from-brand-800 hover:to-brand-700 text-white font-extrabold text-xs sm:text-sm py-3 rounded-2xl shadow-sm transition-all flex items-center justify-center gap-2 group-hover:shadow-glow">
+                        <span>Consultar por WhatsApp</span>
+                        <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slide 9: Cremación Digna -->
+            <div class="w-[82vw] sm:w-[320px] md:w-[350px] lg:w-[370px] flex-shrink-0 snap-start bg-white rounded-[32px] overflow-hidden border border-purple-100 shadow-soft card-hover flex flex-col justify-between group transition-all">
+                <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-purple-100">
+                    <img src="<?= BASE_URL ?>/assets/img/cremacion.jpg" 
+                         alt="Cremación y Despedida Digna de Mascotas" 
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" 
+                         loading="lazy"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent"></div>
+                    <span class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md text-brand-900 text-[11px] font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md border border-white/80 flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-slate-400 animate-pulse"></span> Despedida Digna
+                    </span>
+                    <span class="absolute bottom-3 left-4 text-white text-xs font-bold flex items-center gap-1.5">
+                        <i class="fa-solid fa-heart text-accent-300"></i> Acompañamiento Empático
+                    </span>
+                </div>
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <div>
+                        <h3 class="text-xl font-black text-brand-900 mb-2 group-hover:text-brand-700 transition-colors">
+                            Cremación Digna
+                        </h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                            Servicio digno y respetuoso para acompañarte en los momentos difíciles, con el cuidado y sensibilidad que tu familia merece.
+                        </p>
+                        <div class="space-y-1.5 mb-6 text-xs text-slate-500 font-semibold">
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Manejo cuidadoso y honorable</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Opción individual o comunitaria</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-[11px]"></i> Atención y asesoría personalizada</div>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/593983899798" target="_blank" class="w-full text-center bg-gradient-to-r from-brand-700 to-brand-600 hover:from-brand-800 hover:to-brand-700 text-white font-extrabold text-xs sm:text-sm py-3 rounded-2xl shadow-sm transition-all flex items-center justify-center gap-2 group-hover:shadow-glow">
+                        <span>Más información por WhatsApp</span>
+                        <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
+    
 
     <!-- 4. CÓMO FUNCIONA NUESTRO AGENDAMIENTO EN LÍNEA (3 Pasos Rápidos) -->
     <section class="bg-gradient-to-br from-brand-900 via-brand-800 to-purple-950 rounded-[36px] p-8 sm:p-12 text-white shadow-xl relative overflow-hidden">

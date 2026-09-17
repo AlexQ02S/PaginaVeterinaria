@@ -58,7 +58,7 @@
             <div class="flex items-center gap-6 font-medium">
                 <span class="flex items-center gap-2">
                     <i class="fa-solid fa-clock text-accent-400"></i>
-                    Lun - Sáb: 09:00 - 17:00
+                    Lun - Sáb: 09:00 - 18:00
                 </span>
                <span class="flex items-center gap-2">
                    <i class="fa-solid fa-envelope text-accent-400"></i>
